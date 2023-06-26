@@ -1,5 +1,5 @@
 const Home = async () => {
-  const pokemon = await fetch("http://localhost:3000/api/pokemon/")
+  const pokemon = await fetch("https://pokemon-jsonfile-api.vercel.app/api/pokemon/")
     .then((res) => res.json())
     .catch((err) => console.log(err));
 
